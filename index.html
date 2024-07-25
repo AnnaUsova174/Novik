@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About me</a></li>
+            <li class="nav__item"><a href="#">Skills</a></li>
+            <li class="nav__item"><a href="#">Portfolio</a></li>
+            <li class="nav__item"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Бургер меню -->
+      <div class="burger">
+        <!-- Чекбокс для открытия бургер-меню -->
+        <input type="checkbox" class="burger__check" />
+        <!-- Иконка открытия бургера -->
+        <svg
+          class="burger__icon burger__icon_open"
+          xmlns="http://www.w3.org/2000/svg"
+          width="33"
+          height="20"
+          viewBox="0 0 33 20"
+          fill="none"
+        >
+          <rect width="33" height="3.83721" fill="black" />
+          <rect y="7.67383" width="33" height="3.83721" fill="black" />
+          <rect y="15.3496" width="33" height="3.83721" fill="black" />
+        </svg>
+        <!-- Иконка закрытия бургера -->
+        <svg
+          class="burger__icon burger__icon_close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          viewBox="0 0 23 23"
+          fill="none"
+        >
+          <rect
+            x="2.68701"
+            width="27.3715"
+            height="3.8"
+            transform="rotate(45 2.68701 0)"
+            fill="#828282"
+          />
+          <rect
+            x="0.831299"
+            y="19.5566"
+            width="27.3715"
+            height="3.8"
+            transform="rotate(-45 0.831299 19.5566)"
+            fill="#828282"
+          />
+        </svg>
+
+        <ul class="burger__list">
+          <li class="burger__item"><a href="#">Home</a></li>
+          <li class="burger__item"><a href="#">About me</a></li>
+          <li class="burger__item"><a href="#">Skills</a></li>
+          <li class="burger__item"><a href="#">Portfolio</a></li>
+          <li class="burger__item"><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="text-content">
+            <a href="#"><h1 class="home__title">Denis Novik</h1></a>
+            <p>
+              UX | UI designer <br />
+              24 years old, Minsk
+            </p>
+          </div>
+          <div class="home__img-block">
+            <picture>
+              <source
+                media="(max-width:550px)"
+                srcset="./assets/images/novikvertical.webp"
+              />
+              <img
+                class="home__img"
+                src="./assets/images/novik.webp"
+                alt="Denis Novik"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="title">About me</h2>
+          <div class="text text__about">
+            <p>
+              Hi, I'm Denis – UX/UI designer from Minsk.
+              <br />
+              I'm interested in design and everything connected with it.
+            </p>
+
+            <p>
+              I'm studying at courses "Web and mobile design
+              <br />
+              interfaces" in IT-Academy.
+            </p>
+
+            <p>
+              Ready to implement excellent projects <br />
+              with wonderful people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Общая карточка секции scills -->
+      <section class="scills">
+        <div class="container">
+          <!-- Заголовок секции scills -->
+          <h2 class="title title__scills">Skills</h2>
+
+          <p class="text text__scills">I work in such programs as</p>
+
+          <!-- Общий блок с иконками программ -->
+          <div class="scills__cards">
+            <!-- Карточка с конкретной иконкой программы и названием -->
+            <div class="card">
+              <img
+                class="card__icon"
+                src="./assets/icons/Photoshop.svg"
+                alt="Adobe Photoshop"
+              />
+              <p class="icons__name">
+                Adobe <br />
+                Photoshop
+              </p>
+              <div class="stars">
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Grey star (1).svg"
+                  alt="Рейтинг"
+                />
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card__icon"
+                src="./assets/icons/Illustrator.svg"
+                alt="Adobe Illustrator"
+              />
+              <p class="icons__name">
+                Adobe <br />
+                Illustrator
+              </p>
+              <div class="stars">
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Grey star (1).svg"
+                  alt="Рейтинг"
+                />
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card__icon"
+                src="./assets/icons/After Effects.svg"
+                alt="Adobe After Effects"
+              />
+              <p class="icons__name">
+                Adobe <br />
+                After Effects
+              </p>
+              <div class="stars">
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Grey star (1).svg"
+                  alt="Рейтинг"
+                />
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card__icon"
+                src="./assets/icons/Figma.svg"
+                alt="Figma"
+              />
+              <p class="icons__name">Figma</p>
+              <div class="stars">
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Black star.svg"
+                  alt="Рейтинг"
+                />
+                <img
+                  class="star"
+                  src="./assets/icons/Grey star (1).svg"
+                  alt="Рейтинг"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="title title__portfolio">Portfolio</h2>
+          <div class="portfolio__content">
+            <div class="portfolio__cover-img portfolio__first-img">
+              <img
+                class="portfolio__img"
+                src="./assets/images/Portfolio.png"
+                alt="Portfolio"
+              />
+            </div>
+            <p class="text text__portfolio">
+              <a href="#">Online fashion store - Homepage</a>
+            </p>
+            <div class="portfolio__cover-img">
+              <img
+                class="portfolio__img"
+                src="./assets/images/img_reebok.png"
+                alt="Portfolio"
+              />
+            </div>
+            <p class="text text__portfolio">
+              <a href="#">Reebok Store - Concept</a>
+            </p>
+            <div class="portfolio__cover-img">
+              <img
+                class="portfolio__img"
+                src="./assets/images/img_broun.png"
+                alt="Portfolio"
+              />
+            </div>
+            <p class="text text__portfolio">
+              <a href="#">Braun Landing Page - Concept</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="Contacts">
+      <div class="container">
+        <h2 class="title title__contacts">Contacts</h2>
+        <p class="text text__contacts">
+          Want to know more or just chat?
+          <br />
+          You are welcome!
+        </p>
+        <button class="button button__text">Send message</button>
+        <div class="contacts__block-icons">
+          <a href="#"
+            ><img class="contacts__icon" src="./assets/icons/linkednl.svg"
+          /></a>
+          <a href="#"
+            ><img class="contacts__icon" src="./assets/icons/instagram.svg"
+          /></a>
+          <a href="#"
+            ><img class="contacts__icon" src="./assets/icons/behance.svg"
+          /></a>
+          <a href="#"
+            ><img class="contacts__icon" src="./assets/icons/dribble.svg"
+          /></a>
+        </div>
+        <p class="text text__icons">
+          Like me on
+          <br />
+          <a href="#">LinkedIn</a>, <a href="#">Instagram</a>,
+          <a href="#">Behance</a>, <a href="#">Dribble</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
